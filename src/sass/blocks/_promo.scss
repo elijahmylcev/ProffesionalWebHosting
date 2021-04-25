@@ -1,0 +1,304 @@
+.promo {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    grid-auto-rows: minmax(500px, auto);
+    grid-template-areas:
+        'present present'
+        'webhost domain'
+        'feature feature'
+    ;
+    // .promo__present
+
+    &__present {
+        grid-area: present;
+        background: url(../img/bg_1.png) center (center/cover) no-repeat;
+        text-align: center;
+        padding: 234px 0 141px 0;
+        // .promo__present_title
+
+        &_title {
+            margin: 0 auto;
+            font-size: 48px;
+            line-height: 24px;
+            font-weight: 400;
+            color: #ffffff;
+        }
+
+        // .promo__present_subtitle
+
+        &_subtitle {
+            margin: 34px auto 0 auto;
+            font-family: Raleway;
+            font-size: 30px;
+            line-height: 24px;
+            font-weight: 400;
+            color: #ffffff;
+        }
+
+        // .promo__present_icon
+
+        &_icon {
+            display: block;
+            margin: 59px auto 0 auto;
+        }
+
+        // .promo__present_form
+
+        &_form {
+            margin: 61px auto 0 auto;
+            max-width: 572px;
+            height: 90px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                opacity: 0.5;
+                background-color: #ffffff;
+
+            }
+
+            .formConnect {
+
+                &_input {
+                    display: block;
+                    max-width: 273px;
+                    height: 54px;
+                    background-color: #ffffff;
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: #2d2d2d;
+                    padding: 20px 22px;
+                    border: none;
+                }
+
+                // .formConnect_domen
+
+                &_domen {
+                    display: block;
+                    max-width: 108px;
+                    height: 54px;
+                    background-color: #ffe13e;
+                    font-size: 18px;
+                    font-weight: 700;
+                    color: #2d2d2d;
+                    padding-left: 10px;
+                    padding-right: 14px;
+                    border:none;
+                }
+
+                // .formConnect__btn
+
+                &__btn {
+                    display: block;
+                    max-width: 154px;
+                    padding: 8px;
+                    height: 54px;
+                    background-color: #ffe13e;
+                    font-size: 14px;
+                    font-weight: 700;
+                    color: #ffffff;
+                    border:none;
+                    transition: 0.3s;
+                    &:hover {
+                        color: $main-color;
+                        background-color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+
+    // .promo__webhost
+
+    &__webhost {
+        grid-area: webhost;
+        background-color: $second-color;
+        padding: 0 100px;
+        text-align: center;
+
+
+        &_icon {
+            margin-top: 116px;
+        }
+
+        // .promo__webhost_title
+
+        &_title {
+            margin-top: 56px;
+            font-size: 36px;
+            line-height: 24px;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        // .promo__webhost_descr
+
+        &_descr {
+            margin-top: 27px;
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 400;
+            color: #ffffff;
+        }
+
+        // .promo__webhost_btn
+
+        &_btn {
+            margin-top: 37px;
+            width: 155px;
+            height: 56px;
+            border: 2.7px solid #ffffff;
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 700;
+            color: #ffffff;
+            background-color: $second-color;
+            transition: 0.3s;
+            margin-bottom: 104px;
+            &:hover {
+                color: $second-color;
+                background-color: #ffffff;
+            }
+        }
+    }
+
+    // .promo__domain
+
+    &__domain {
+        grid-area: domain;
+        background-color: $main-color;
+        padding: 0 100px;
+        text-align: center;
+
+        &_icon {
+            margin-top: 181px;
+        }
+
+        // .promo__domain_title
+
+        &_title {
+            margin-top: 86px;
+            font-size: 36px;
+            line-height: 24px;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        // .promo__domain_descr
+
+        &_descr {
+            margin-top: 27px;
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 400;
+            color: #ffffff;
+        }
+
+        // .promo__domain_btn
+
+        &_btn {
+            margin-top: 37px;
+            width: 155px;
+            height: 56px;
+            border: 2.7px solid #ffffff;
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 700;
+            color: #ffffff;
+            background-color: $main-color;
+            transition: 0.3s;
+
+            &:hover {
+                color: $main-color;
+                background-color: #ffffff;
+            }
+        }
+    }
+
+
+    &__features {
+        max-width: 100%;
+        grid-area: feature;
+        background: url(../img/bg_Our_Features.png) center (center/cover) no-repeat;
+        text-align: center;
+        padding: 98px 0 122px 0;
+
+        // .promo__features_title
+
+        &_title {
+            font-size: 48px;
+            line-height: 24px;
+            font-weight: 700;
+            color: #202242;
+        }
+
+        // .promo__features_subtitle
+
+        &_subtitle {
+            margin-top: 30px;
+            font-size: 24px;
+            line-height: 24px;
+            font-weight: 400;
+            color: #202242;
+        }
+
+        // .promo__features_wrapper
+
+        &_wrapper {
+            margin-top: 88px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+    }
+
+
+    .features {
+        &__item {
+            width: 260px;
+            // .features__item_divider
+
+            &_divider {
+                margin: 34px auto 31px auto;
+                width: 69px;
+                height: 3px;
+                opacity: 0.5;
+                background-color: #202242;
+            }
+
+            // .features__item_subtitle
+
+            &_subtitle {
+                font-size: 30px;
+                line-height: 24px;
+                font-weight: 400;
+                color: #f4d320;
+            }
+
+            // .features__item_descr
+
+            &_descr {
+                margin-top: 26px;
+                font-size: 14px;
+                line-height: 24px;
+                font-weight: 400;
+                color: #202242;
+            }
+
+        }
+    }
+}

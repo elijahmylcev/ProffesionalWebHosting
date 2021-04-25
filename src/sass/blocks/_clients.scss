@@ -1,0 +1,31 @@
+.clients {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 87px 0 111px 0;
+    background-color: #ffffff;
+    width: 1235px;
+    margin: 0 auto;
+    // .clients__info
+
+    &__info {
+        width: 340px;
+        text-align: left;
+        // .clients__info_title
+
+        &_title {
+            font-size: 36px;
+            font-weight: 700;
+            color: #202242;
+        }
+
+        // .clients__info_descr
+
+        &_descr {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+            color: #adadad;
+        }
+    }
+}

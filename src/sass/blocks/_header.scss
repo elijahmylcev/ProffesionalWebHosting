@@ -1,0 +1,103 @@
+header {
+    height: 147px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    height: 32px;
+}
+
+.menu {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // .menu__item
+
+    &__item {
+        list-style-type: none;
+
+        // .menu__item_link
+
+        &_link {
+            font-size: 16px;
+            line-height: 24px;
+            text-transform: uppercase;
+            font-weight: 400;
+            color: #202242;
+            transition: all .3s;
+            &:hover {
+                display: block;
+                color: #202242 ;
+                text-shadow: 0 0 10px #202242;
+                text-decoration: none;
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // .info__ask
+
+    &__ask {
+        text-align: center;
+        font-size: 12px;
+        line-height: 24px;
+        font-weight: 600;
+        color: #202242;
+    }
+
+    // .info__connection
+
+    &__connection {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        // .info__connection_btn
+
+        &_btn {
+            width: 122px;
+            height: 41px;
+            background-color: #ffe13e;
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 600;
+            color: #202242;
+            border: none;
+            transition: all .3s;
+            &:hover {
+                background-color: #202242;
+                color: $main-color;
+                text-shadow: 0 0 20px $main-color;
+            }
+
+        }
+
+        &_vert {
+            width: 1px;
+            height: 34px;
+            opacity: 0.3;
+            background-color: #202242;
+        }
+
+        // .info__connection_tel
+
+        &_tel {
+            font-family: Lato;
+            font-size: 24px;
+            line-height: 24px;
+            font-weight: 700;
+            color: #202242;
+        }
+    }
+}

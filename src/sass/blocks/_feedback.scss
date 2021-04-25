@@ -1,0 +1,58 @@
+.feedback {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    // .feedback__item
+
+    &__item {
+        position: relative;
+        max-width: 372px;
+        background-color: #f5f3f3;
+        padding: 30px 20px;
+        margin-right: 27px;
+
+        :last-child {
+            margin-right: 0;
+        }
+
+        ::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0.5;
+
+        }
+
+        // .feedback__item_descr
+
+        &_descr {
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 400;
+            font-style: italic;
+            color: #a4a4a4;
+        }
+
+        // .feedback__item_name
+
+        &_name {
+            margin-top: 25px;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 700;
+            color: #696969;
+        }
+
+        // .feedback__item_photo
+
+        &_photo {
+            position: absolute;
+            top: 150px;
+            left: 251px;
+        }
+    }
+}
